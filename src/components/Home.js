@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './Hero';
+// import ProductSlider from './ProductSlider';
 import Service from './Service';
 import BestCollection from './BestCollection';
 import SeasonSale from './SeasonSale';
@@ -14,6 +15,7 @@ export default function Home() {
     <div>
       <Hero/>
       <Service/>
+      {/* <ProductSlider/> */}
       <BestCollection/>
       <SeasonSale/>
       <NewArrival/>

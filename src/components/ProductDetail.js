@@ -17,6 +17,9 @@ export default function ProductDetail() {
   const newimage = (image) => {
     setProductImage(image);
   };
+  
+
+
 
   const [cart, setCart] = useState(
     localStorage.getItem("cart") !== null
@@ -50,9 +53,7 @@ export default function ProductDetail() {
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-6 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap ">
-          <div>
-              1
-            </div>
+        
             <div className="flex justify-center items-center w-screen lg:w-auto flex-col">
            
               <img
@@ -75,9 +76,7 @@ export default function ProductDetail() {
                 })}
               </div>
             </div>
-            <div>
-              2
-            </div>
+         
 
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h1

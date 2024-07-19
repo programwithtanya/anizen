@@ -36,7 +36,7 @@ export default function SeasonSale() {
                       <h2>{product.title.slice(0,35)} - {product.desc.slice(0,18)}...</h2>
                       <div className="flex flex-row">
                       <p className="line-through mr-3 text-[#F4CC5E]">{product.actualprize}</p>
-                      <p>{product.price}</p>
+                      <p>${product.price}</p>
                       </div>
               <Link to={`/product/${slugify(product.title)}`}>
               <button className="hover:bg-[#004d35] text-center underline">View <i className="fa-solid fa-arrow-right ml-1"></i></button>

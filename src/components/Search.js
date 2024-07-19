@@ -34,7 +34,7 @@
     
     return (
 
-      <div className={`bg-[#E8F5E9]  ${query.length === 0 ? 'h-[40rem]' : 'h-max'}`}>
+      <div className={`bg-[#E8F5E9]  ${query.length === 0 ? 'lg:h-[40rem] h-[85rem]' : 'h-max'}`}>
         <div className="text-center pt-5 font-Montserrat font-extrabold text-3xl">What are you looking for?</div>
          
           <div className="flex justify-center items-center flex-col  ">
@@ -59,7 +59,7 @@
          query.length===0? 
         <div>
               <div >
-        <div className="py-5 text-center w-[96vw]" >
+        <div className="py-5 text-center w-[93vw] lg:w-[96vw]" >
           <h1 className="text-center font-bold text-3xl font-varela   pt-2  ">
           Most searched products
           </h1>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
 
@@ -243,9 +244,11 @@ const Checkout = () => {
               </form>
             </div>
             <div className="flex justify-around">
-              <button className="w-1/3 py-2 bg-red-500 text-white hover:bg-red-700 font-semibold rounded font-varela">
+              <Link to={"/"} className="w-1/3 py-2 text-center bg-red-500 text-white hover:bg-red-700 font-semibold rounded font-varela">
+              <button >
                 Cancel Order
               </button>
+              </Link>
               <button className="w-1/3 py-2 bg-[#134E4A] hover:bg-green-800 text-white font-semibold rounded font-varela">
                 Place Order
               </button>
