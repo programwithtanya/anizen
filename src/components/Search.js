@@ -30,7 +30,10 @@
     const characterResult = query
       ? results.map((result) => result.item)
       : products;
-      // console.log(results.length)
+      console.log(results)
+       
+
+     
     
     return (
 

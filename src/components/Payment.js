@@ -7,7 +7,7 @@ const Checkout = () => {
   function totalPrice() {
     let sum = 0;
     for (let i = 0; i < cart.length; i++) {
-      sum += Math.round(cart[i].price);
+      sum += Math.round(cart[i].price*cart[i].quantity);
     }
     return sum;
   }

@@ -12,7 +12,7 @@ export default function Cart() {
   function totalPrice() {
     let sum = 0;
     for (let i = 0; i < cart.length; i++) {
-      sum += Math.round(cart[i].price);
+      sum += Math.round(cart[i].price * cart[i].quantity);
     }
     return sum;
   }
@@ -27,7 +27,6 @@ export default function Cart() {
     localStorage.setItem("cart", JSON.stringify(newArr));
     setCart(newArr);
   }
-  
 
   return (
     <div className="py-10 relative">
@@ -111,7 +110,7 @@ export default function Cart() {
                     </p>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center ">
-                        <button  className="mx-1 group rounded-[50px] border border-gray-200 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
+                        <button className="mx-1 group rounded-[50px] border border-gray-200 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
                           <svg
                             className="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
                             width="18"
@@ -129,12 +128,10 @@ export default function Cart() {
                             />
                           </svg>
                         </button>
-                        <input
-                          type="text"
-                          id="number"
-                          className="border font-varela border-gray-200 rounded-full w-10 aspect-square outline-none text-gray-900 font-semibold text-sm py-1.5 px-3 bg-gray-100  text-center"
-                          placeholder={item.quantity}
-                        />
+
+                        <button className="border font-varela border-gray-200 rounded-full w-10 aspect-square outline-none text-black font-semibold text-sm py-1.5 px-3 bg-gray-100  text-center">
+                          {item.quantity}
+                        </button>
                         <button className="mx-1 group rounded-[50px] border border-gray-200 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
                           <svg
                             className="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
@@ -164,51 +161,58 @@ export default function Cart() {
             </div>
           )}
           {cart.length === 0 ? (
-<span></span>):(
-          <div class="flex items-center justify-between w-full mb-6">
-            <p class="font-normal text-xl leading-8 text-gray-400">Sub Total</p>
-            <h6 class="font-semibold text-xl leading-8 text-gray-900">
-              ${totalPrice()}
-            </h6>
-          </div>)}
+            <span></span>
+          ) : (
+            <div class="flex items-center justify-between w-full mb-6">
+              <p class="font-normal text-xl leading-8 text-gray-400">
+                Sub Total
+              </p>
+              <h6 class="font-semibold text-xl leading-8 text-gray-900">
+                ${totalPrice()}
+              </h6>
+            </div>
+          )}
           {cart.length === 0 ? (
-            <span></span>):(
-          <div class="flex items-center justify-between w-full pb-5 ">
-            <p class="font-normal text-xl leading-8 text-gray-400">
-              Delivery Charge
-            </p>
-            <h6 class="font-semibold text-xl leading-8 text-gray-900">
-              $45.00
-            </h6>
-          </div>
+            <span></span>
+          ) : (
+            <div class="flex items-center justify-between w-full pb-5 ">
+              <p class="font-normal text-xl leading-8 text-gray-400">
+                Delivery Charge
+              </p>
+              <h6 class="font-semibold text-xl leading-8 text-gray-900">
+                $45.00
+              </h6>
+            </div>
           )}
         </div>
         {cart.length === 0 ? (
-          <span></span>):(
-        <div className="flex flex-col md:flex-row items-center justify-between lg:px-6 pb-6 border-b border-gray-200">
-          <h5 className="text-gray-900  font-semibold text-2xl leading-9 w-full max-md:text-center max-md:mb-4 font-varela">
-            Total
-          </h5>
+          <span></span>
+        ) : (
+          <div className="flex flex-col md:flex-row items-center justify-between lg:px-6 pb-6 border-b border-gray-200">
+            <h5 className="text-gray-900  font-semibold text-2xl leading-9 w-full max-md:text-center max-md:mb-4 font-varela">
+              Total
+            </h5>
 
-          <div className="flex items-center gap-5">
-            <h6 className=" font-bold text-3xl text-[#e5b830] font-varela">
-              ${totalPrice() + 45}
-            </h6>
+            <div className="flex items-center gap-5">
+              <h6 className=" font-bold text-3xl text-[#e5b830] font-varela">
+                ${totalPrice() + 45}
+              </h6>
+            </div>
           </div>
-        </div>
         )}
         {cart.length === 0 ? (
-          <span></span>):(
-        <div>
-          <p className="text-gray-500 text-center mb-5 mt-6 font-varela">
-            Shipping, taxes, and discounts are included in total price
-          </p>
-          <Link to={"/payment"}>
-            <button className="rounded-full py-4 px-6 bg-[#e5b830] text-white font-semibold font-varela text-lg w-full transition hover:bg-[#c19204]">
-              Checkout
-            </button>
-          </Link>
-        </div>
+          <span></span>
+        ) : (
+          <div>
+            <p className="text-gray-500 text-center mb-5 mt-6 font-varela">
+              Shipping, taxes, and discounts are included in total price
+            </p>
+            <Link to={"/payment"}>
+              <button className="rounded-full py-4 px-6 bg-[#e5b830] text-white font-semibold font-varela text-lg w-full transition hover:bg-[#c19204]">
+                Checkout
+              </button>
+            </Link>
+          </div>
         )}
       </div>
     </div>
