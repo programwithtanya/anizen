@@ -5,7 +5,7 @@ import products from '../data';
 export default function ProductSlider() {
   const slugify = (title) => title.replace(/\s/g, '-');
 
-  const [selectedCategory, setSelectedCategory] = useState('Desk Accessories');
+  const [selectedCategory, setSelectedCategory] = useState('Accessories');
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
