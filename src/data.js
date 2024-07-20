@@ -16,7 +16,7 @@ import p15 from "./images/static-product/p-15.png";
 let data = [
   {
     title: "Demon Slayer  Nezuko Kamado Nendoroid Swacchao! figure",
-    type: "figure",
+    type: "Non-Scale Figures",
     desc: "Nezuko Kamado joins the Nendoroid Swacchao! series! Nezuko Kamado from Demon Slayer: Kimetsu no Yaiba is joining the new Nendoroid Swacchao! series! Nendoroid Swacchao! figures feature a Nendoroid sitting in a chair, making it easy to display them on desks, shelves or areas tight on space!  The figures can even be displayed on the edges of your desk or shelf, so enjoy collecting and displaying them everywhere! *Use the included stand to display.  • Size approx: 3.5 inches tall <br> • Material: PVC, ABS  • Manufacturer: Good Smile Company",
     price: 35.50,
     actualprize: "$40.15",
@@ -40,7 +40,7 @@ let data = [
   },
   {
     title: "Kuroko's Basketball: Last Game Tetsuya Kuroko & Tetsuya Set",
-    type: "figure",
+    type: "Non-Scale Figures",
     desc: "Dive into the court action with the Tetsuya Kuroko & Tetsuya #2 prize figure set. These two will bring the court to your anime figure collection. It’s a slam dunk for any “Kuroko’s Basketball” fan!",
     price: 29.99,
     actualprize: "$32.50",
@@ -55,7 +55,7 @@ let data = [
   },
   {
     title: "Sanrio Kuromi Mocchiri Face Cushion",
-    type: "pillow",
+    type: "Kitchen & Home",
     desc: "Cuddle up with the mischievous yet adorable Kuromi Mocchiri face cushion. This plush cushion is as soft as Kuromi’s heart is bold, making it the perfect companion for Sanrio enthusiasts looking for comfort with a side of sass.",
     price: 29.99,
     actualprize: "$35.40",
@@ -68,7 +68,7 @@ let data = [
   },
   {
     title: "Jujutsu Kaisen x Dim Mak Gojo T Shirt",
-    type: "t-shirt",
+    type: "Clothing",
     desc: "Slip into this Dim Mak x “JUJUTSU KAISEN” tee and let the Gojo clan’s coolest teach you a thing or two about style. With a vibe this chill, Satoru could totally run a class on looking sharp at Tokyo Jujutsu High—combining that effortless sorcerer swag with a dash of iconic flair. <br> Gear up, sorcerers! This Dim Mak x “JUJUTSU KAISEN” collaboration combines the dynamic energy of one of the most popular anime series with Dim Mak’s bold designs. Dim Mak is a brand that embodies the cutting-edge intersection of music, fashion, and lifestyle, making this the perfect collab to help you unlock your new Cursed Technique: Upgraded Wardrobe.",
     price: 44.99,
     actualprize: "$50",
@@ -80,7 +80,7 @@ let data = [
   },
   {
     title: "Haikyu!! Karasuno Group Mug",
-    type: ["drinkware", "cup"],
+    type: "Kitchen & Home",
     desc: "Start your day with a spike of energy from the Karasuno Group Mug. It’s the team huddle you need with your morning coffee. Consider this mug your daily pep talk from your favorite volleyball squad, ready to serve up some motivation with every sip.",
     price: 7.99,
     actualprize: "$17.95",
@@ -89,7 +89,7 @@ let data = [
   },
   {
     title: "The Quintessential Quintuplets Movie Blu ray",
-    type: "blu-ray",
+    type: "Blu-rays",
     desc: "Heading into their third year of high school, the girls are still waiting for their beloved tutor to choose one of them—until Futaro reveals that he’ll decide by the end of their school festival. But is three days really enough time to make up his mind?",
     price: 29.99,
     actualprize: "$39.98",
@@ -103,7 +103,7 @@ let data = [
   },
   {
     title: "Fruits Basket Yuki Rat 6 Inch Plush",
-    type: "plush under 7 inch tall ",
+    type: "Accessories",
     desc: "Officially licensed, 100% polyester, Yuki stands 6 tall",
     price: 13.99,
     actualprize: "$20.00",
@@ -112,7 +112,7 @@ let data = [
   },
   {
     title: "One Piece Luffy Straw Hat",
-    type: "hats",
+    type: "Accessories",
     desc: "Cap off your “One Piece” collection with the iconic Luffy straw hat. More than just headwear, it represents the dreams and freedom of the Straw Hat crew. It’s almost like wearing it makes you part of a grand adventure on the high seas… just without the risk.",
     price: 14.99,
     actualprize: "$16.28",
@@ -125,7 +125,7 @@ let data = [
   },
   {
     title: "One Piece Roronoa Zoro Pop! Keychain",
-    type: "keychain",
+    type: "Accessories",
     desc: "Roronoa Zoro is a swordsman and ex-bounty hunter, who is looking to rejoin his crew members. Bring Pop! Keychain Roronoa Zoro into your One Piece Straw Hat Pirates collection. Vinyl keychain is approximately 4-inches long.",
     price: 4.99,
     actualprize: "$6.00",
@@ -138,7 +138,7 @@ let data = [
   {
     title:
       "Dragon Ball Super The Complete Series Limited Edition Blu ray",
-    type: "blu-ray",
+    type: "Blu-rays",
     desc: "After defeating Majin Buu, life is peaceful once again. However, new threats begin to loom one after another. From Beerus, the God of Destruction, to the resurrection of Frieza, foes from across time and space step up to face Goku and his friends.",
     price: 179.99,
     actualprize: "$199.98",
@@ -153,7 +153,7 @@ let data = [
   },
   {
     title: "Demon Slayer Swordsmith Village Arc Blu ray Limited Edition",
-    type: "limited editions",
+    type: "Blu-rays",
     desc: "“Wield your blade against the demons drawing near.” <br> Aniplex of America is proud to present the Limited Edition Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc Complete Blu-ray Set! The limited edition set comes with three Blu-ray discs, containing all 11 episodes of the season, plus six original soundtrack CDs housed in a stunning box illustrated by character designer Akira Matsushima. In addition to a special video program featuring the 2023 World Tour premiere highlights, trailers, plus textless opening and ending, the limited edition set is the only place fans can get their hands on the exclusive deluxe accordion booklets. <br> Tanjiro’s journey leads him to the Swordsmith Village, where he reunites with two Hashira, members of the Demon Slayer Corps’ highest-ranking swordsmen - Mist Hashira Muichiro Tokito and Love Hashira Mitsuri Kanroji. With the shadows of demons lurking near, a new battle begins for Tanjiro and his comrades.",
     price: 135.98,
     actualprize: "$169.98",
@@ -165,7 +165,7 @@ let data = [
   },
   {
     title: "One Piece Kaido Portrait.Of.Pirates WA MAXIMUM Limited Figure ",
-    type: "figure",
+    type: "Non-Scale Figures",
     desc: "Conquer the New World with this Kaido Portrait.Of.Pirates WA-MAXIMUM limited figure from “One Piece.” This re-run figure brings back the fearsome Yonko in all his vibrant glory. Whether you’re a pirate or a marine, Kaido’s might will leave you in awe!",
     price: 414.99,
     actualprize: "$500.62",
@@ -180,7 +180,7 @@ let data = [
   },
   {
     title: "Berserk The Golden Age Arc Blu ray Memorial Edition",
-    type: "blu-ray",
+    type: "Blu-rays",
     desc: "Memorial Edition is a must-have collector's item for fans of the iconic dark fantasy series. This special edition Blu-ray set features the critically acclaimed trilogy of movies that adapt one of the most beloved arcs from Kentaro Miura's legendary manga, Berserk.",
     price: 52.49,
     actualprize: "$69.98",
@@ -195,7 +195,7 @@ let data = [
   },
   {
     title: "My Hero Academia Season 6 Part 2 Blu ray + DVD ",
-    type: "limited editions",
+    type: "Blu-rays",
     desc: "Escaped villains wreak havoc across the nation while Deku faces One For All’s successors. As Shigaraki’s primary target, he strikes out alone to keep All Might and his friends from the fight. But Class 1-A won’t stand for it and vow to bring Deku home.",
     price: 67.49,
     actualprize: "$89.98",
@@ -221,7 +221,7 @@ let data = [
   },
   {
     title: " Spy x Family Anya Forger & Bond Forger Scale Statue Figure",
-    type: "1/7 Scale",
+    type: "Non-Scale Figures",
     desc: " Size: 7.7 inches tall. Material: PVC, ABS. Manufacturer: Kotobukiya",
     price: 145.00,
     actualprize: "$149.99",
@@ -243,7 +243,7 @@ let data = [
   },
   {
     title: " Spy x Family Buddy Colle Rubber Mascot Blind Keychain (Vol. 2)",
-    type: "Keychains",
+    type: "Accessories",
     desc: "From the popular series with a second season currently airing, SPY×FAMILY, comes a second set of Buddy-Colle rubber mascots! Each of the six mascots features an original illustration that groups characters that have specific bonds together! The mascots all include a ball chain allowing you to attach it to your bag or other items to carry your favorite characters with you wherever you go! Item is shipped at random. Upon purchasing, you will receive one of the six options shown below. Sorry, no choice or returns. ",
     price: 9.99,
     actualprize: "$10.98",
@@ -255,7 +255,7 @@ let data = [
   },
   {
     title: "Spy x Family Yor Forger Figuarts Mini (CODE:White Ver.) ",
-    type: "Figuarts Mini",
+    type: "Non-Scale Figures",
     desc: " Your favorite characters, stylized and squashed down to adorable palm-sized proportions with lifelike eyes and simple posability. YOR FORGER -CODE: White- from “SPY×FAMILY CODE: White” joins the series!",
     price: 24.99,
     actualprize: "$30.00",
@@ -290,7 +290,7 @@ let data = [
   },
   {
     title: "Hatsune Miku Pixel Miku Heart Enamel Pin Set ",
-    type: "Enamel Pins ",
+    type: "Accessories",
     desc: "Everyone knows that it's the accessories that make the outfit, especially when you're a globetrotting popstar with the ability to perform on the other side of the world in the blink of an eye. This Miku Pin Pack includes two pins with designs featuring a pixelized Miku and a heart with Hatsune Miku in English and Japanese. It's the perfect way to turn any outfit up to eleven. ",
     price: 14.95,
     actualprize: "$15.98",
@@ -302,7 +302,7 @@ let data = [
   },
   {
     title: "Sailor Moon Artemis FiGPiN ",
-    type: " FiGPiNs",
+    type: " Accessories",
     desc: "Don’t tell Sailor Venus, but Artemis is taking a break to meet a new companion: you! This FiGPiN allows Artemis to join you in your journeys, whether growing your anime collection or fighting evil by midnight. ",
     price:14.99 ,
     actualprize: "$16.35",
@@ -326,7 +326,7 @@ let data = [
   },
   {
     title: " Pretty Guardian Sailor Moon Sailor Chibi Moon SH Figuarts Figure (Animation Color Ver.)",
-    type: " S.H.Figuarts",
+    type: "Non-Scale Figures",
     desc: " Sailor Chibi Moon rejoins S.H.Figuarts, in a new edition specially colored to evoke her appearance in the 1990s Sailor Moon animated series! This highly posable action figure captures all of the Sailor's cuteness, with accurate proportions and an all-new, gorgeously designed display package!",
     price: 52.45,
     actualprize: "$59.99",
@@ -338,7 +338,7 @@ let data = [
   },
   {
     title: "Sailor Moon Crystal Truth or Bluff Game ",
-    type: "Board Games ",
+    type: "Games",
     desc: "Sailor Moon Crystal Truth or Bluff is a Dice Game game for 3-8 players with approximately 20-40 minutes of game play per round. A hilariously fun party game of deception and misdirection featuring characters from the popular anime series Sailor Moon Crystal! Watch out for the Dark Kingdom villains who can mess with your plans. The player with the most Success Tokens in the end is the winner! ",
     price:21.95 ,
     actualprize: "$34.95to",
@@ -350,7 +350,7 @@ let data = [
   },
   {
     title: " Sailor Mars Sailor Moon Figure (Animation Color Ver.)",
-    type: " Non-Scale Figures",
+    type: "Non-Scale Figures",
     desc: " A new Animation Color Edition of the popular S.H. Figuarts Pretty Guardian Sailor Moon figure series! Featuring coloration based on their appearances of the 1990's anime series, it showcases the Sailors with accuracy to detail and posability that fans have come to expect from S.H. Figuarts. Note that the actual product may vary from the imagery and the figure must be attached to the stand in order for it to be displayed in a standing pose.",
     price: 47.70,
     actualprize: "$59.99",
@@ -362,7 +362,7 @@ let data = [
   },
   {
     title: " Pretty Guardian Sailor Moon Luna Sofvimates Figure",
-    type: " Non-Scale Figures",
+    type: "Non-Scale Figures",
     desc: "Size: approx. 7.8 inches tall. Material: PVC. Manufacturer: Banpresto ",
     price: 26.99 ,
     actualprize: "$30.52",
@@ -374,7 +374,7 @@ let data = [
   },
   {
     title: " Pretty Guardian Sailor Moon Super Sailor Moon Figure (Bright Moon & Legendary Silver Crystal)",
-    type: " Non-Scale Figures",
+    type: "Non-Scale Figures",
     desc: "cription Figuarts Zero chouette is proud to announce the arrival of Super Sailor Moon, from Sailor Moon Eternal. Seated on a beautiful moon-shaped stand, accentuated by translucent silver crystals and fine detail, bring you right into her gorgeous world. ",
     price: 72.25,
     actualprize: "$85.00",
@@ -386,7 +386,7 @@ let data = [
   },
   {
     title: "Smoko Tayto Potato Ramen Blind Box ",
-    type: " Desk Accessories",
+    type: "Accessories",
     desc: "Discover the delicious surprise of Tayto Potato Ramen Blind Box. Each box contains a fun and flavorful ramen potato for any occasion. Enjoy the perfect combination of salty and sweet with a unique blind box experience. ",
     price: 14.99,
     actualprize: "$16.00",
@@ -396,18 +396,66 @@ let data = [
       "https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw5b3f8491/images/855476004546_smoko-tayto-potato-ramen-blind-box_1.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw3e254f15/images/855476004546_smoko-tayto-potato-ramen-blind-box_2.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw4140edc3/images/855476004546_smoko-tayto-potato-ramen-blind-box_3.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwd57c2582/images/855476004546_smoko-tayto-potato-ramen-blind-box_4.jpg?sw=200&sh=200&sm=fit&q=100 "
     ],
   },
-  // {
-  //   title: " ",
-  //   type: " ",
-  //   desc: " ",
-  //   price: ,
-  //   actualprize: "",
+  {
+    title: "Tanto Cuore Expanding the House Game",
+    type: "Games",
+    desc: "Tanto Cuore is a deck building card game for 2-4 players with an estimated play time of 30-60 minutes per game. Tanto Cuore: Expanding the house can be played in combination with the base Tanto Cuore game or as a standalone. Bring the garden theme to the world of maid-collecting with construction cards such as Garden, Lily Garden and Pavilion. Tanto Cuore is a deck building card game where players are the master of the house. They employ a lot of cute maids to serve them. The player who has the most valuable maids in his staff is the winner of the game.",
+    price: 39.96,
+    actualprize: "$49.95",
 
 
-  //   image: []
-  //     " "," "," "," "
-  //   ],
-  // },
+    image: [  "https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw7d41d148/rightstuf/0703558837639_game-tanto-cuore-expanding-the-house-card-game-primary.jpg?sw=200&sh=200&sm=fit&q=100","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw2c59aa48/rightstuf/0703558837639_game-tanto-cuore-expanding-the-house-card-game-altA.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwa9b5f5ca/rightstuf/0703558837639_game-tanto-cuore-expanding-the-house-card-game-altB.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwbd205b85/rightstuf/0703558837639_game-tanto-cuore-expanding-the-house-card-game-altC.jpg?sw=200&sh=200&sm=fit&q=100 "]
+    
+    ,
+  },
+  {
+    title: "Demon Slayer - Tamagotchi Nano: Nezuko Exploding Blood!",
+    type: "Games",
+    desc: "Demon Slayer Tamagotchi nano Demon Slayer Tamagotchi wave 4 has programming that follows the story of “Demon Slayer -Kimetsu No Yaiba- Entertainment District Arc”. This Tamagotchi Nano device, “Exploding Blood Color” design is based on Nezuko’s Blood Demon Art. Raise your Demon Slayer and based on how you train it, you can unlock various Slayers. You can raise 18 characters including 3 new characters in Demon Slayer -Kimetsu No Yaiba-Tamagotchi Entertainment District Arc. Feed your Slayer a rice bowl or green tea and play three different games. If you neglect training your Slayer, then your Slayer will become injured. Be sure to treat the injury before Kakushi cleans the dead Slayer. Continue playing to reveal all the features such as Kasugai garasu (Kasugai Crow), Chuntaro, and demons who battled out! This is a Tamagotchi Nano device, which measures approximately 1.57 inches. All colors have the exact specifications. Battery (LR44 x 2) included. Age grade: 8+. The new features for wave 4 include: There are 3 new characters to train from Demon Slayer Entertainment District Arc. Play 3 mini-games. Scenes will appear every day at a certain time. Play three different games: Cut Mimizu-Obi by pressing a timed button. Catch the luggage. Play the Shamisen with Zenko.",
+    price: 24.99,
+    actualprize: "$30.25",
+
+
+    image: [  "https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw95050773/images/7014218072108-1-bandai-mobile-games-demon-slayer-tamagotchi-nano-nezuko-exploding-blood-32662442344492.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw16964fb9/images/7014218072108-2-bandai-mobile-games-demon-slayer-tamagotchi-nano-nezuko-exploding-blood-32662442311724.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwcff58a56/images/7014218072108-3-bandai-mobile-games-demon-slayer-tamagotchi-nano-nezuko-exploding-blood-32662442278956.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw44dcb67c/images/7014218072108-4-bandai-mobile-games-demon-slayer-tamagotchi-nano-nezuko-exploding-blood-32662442410028.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw2ab1c688/images/7014218072108-5-bandai-mobile-games-demon-slayer-tamagotchi-nano-nezuko-exploding-blood-32662442377260.jpg?sw=200&sh=200&sm=fit&q=100"]
+    
+    ,
+  },
+  {
+    title: "Crunchyroll x Logic x Cowboy Bebop Logic and the Crew Sweatshirt (Monochrome Version) Crunchyroll Exclusive",
+    type: "Clothing",
+    desc: "Step into the rhythm of the cosmos with this Crunchyroll Exclusive “Cowboy Bebop” collection, a symphony of style orchestrated in collaboration with the lyrical genius (and anime fan) Logic. Each piece is designed with the finest materials for effortless style and comfort, making it a versatile addition to any wardrobe.",
+    price: 99.00,
+    actualprize: "$102.36",
+
+
+    image: [  "https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw791addbc/images/LOGXCBCREW_crunchyroll-x-logic-x-cowboy-bebop-logic-and-the-crew-neck-sweatshirt-crunchyroll-exclusive_11.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw7c4f9817/images/LOGXCBCREW_crunchyroll-x-logic-x-cowboy-bebop-logic-and-the-crew-neck-sweatshirt-crunchyroll-exclusive_1.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwf140d9f3/images/LOGXCBCREW_crunchyroll-x-logic-x-cowboy-bebop-logic-and-the-crew-neck-sweatshirt-crunchyroll-exclusive_2.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw0c6fb86b/images/LOGXCBCREW_crunchyroll-x-logic-x-cowboy-bebop-logic-and-the-crew-neck-sweatshirt-crunchyroll-exclusive_3.jpg?sw=200&sh=200&sm=fit&q=100 "]
+    
+    ,
+  },
+  {
+    title: "Crunchyroll x Logic x Cowboy Bebop - Beanie - Crunchyroll Exclusive",
+    type: "Clothing",
+    desc: "Step into the rhythm of the cosmos with this Crunchyroll Exclusive “Cowboy Bebop” collection, a symphony of style orchestrated in collaboration with the lyrical genius (and anime fan) Logic. Each piece is designed with the finest materials for effortless style and comfort, making it a versatile addition to any wardrobe.",
+    price: 25.00,
+    actualprize: "$30.50",
+
+
+    image: [  "https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwf311d379/images/400000042328_crunchyroll-x-logic-x-cowboy-bebop-beanie-crunchyroll-exclusive_5.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwe3400916/images/400000042328_crunchyroll-x-logic-x-cowboy-bebop-beanie-crunchyroll-exclusive_1.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw5bbf5ae7/images/400000042328_crunchyroll-x-logic-x-cowboy-bebop-beanie-crunchyroll-exclusive_2.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw60723745/images/400000042328_crunchyroll-x-logic-x-cowboy-bebop-beanie-crunchyroll-exclusive_3.jpg?sw=200&sh=200&sm=fit&q=100 "]
+    
+    ,
+  },
+  {
+    title: "Naruto Shippuden - Ichiraku Ramen 3 Pk Sock Set",
+    type: "Clothing",
+    desc: "Now you can run like Naruto using his favorite fuel: ramen! Power up your ninja moves with this Ichiraku Ramen 3 Pk Sock Set featuring designs inspired by Naruto Shippuden. These are perfect for the anime and ramen lovers in your life (and it’s also one of the best ways to enjoy ramen without any of the carbs).",
+    price: 19.99,
+    actualprize: "$24.30",
+
+
+    image: [  " https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw9f5d7e4e/images/197194893669_naruto-shippuden-ichiraku-ramen-3-pk-sock-set_1.jpg?sw=200&sh=200&sm=fit&q=100","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dwa1b83730/images/197194893669_naruto-shippuden-ichiraku-ramen-3-pk-sock-set_2.jpg?sw=200&sh=200&sm=fit&q=100 ","https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw4d145fc7/images/197194893669_naruto-shippuden-ichiraku-ramen-3-pk-sock-set_3.jpg?sw=200&sh=200&sm=fit&q=100 "," https://store.crunchyroll.com/dw/image/v2/BDGC_PRD/on/demandware.static/-/Sites-crunchyroll-master-catalog/default/dw53e96a57/images/197194893669_naruto-shippuden-ichiraku-ramen-3-pk-sock-set_4.jpg?sw=200&sh=200&sm=fit&q=100"]
+    
+    ,
+  },
 
 ];
 

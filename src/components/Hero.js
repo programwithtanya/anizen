@@ -2,7 +2,7 @@ import React from 'react'
 import hero from "../images/home-bg.png"
 import { Link } from 'react-router-dom'
 export default function Hero() {
-
+ 
   return (
    
     <div>
@@ -17,8 +17,8 @@ export default function Hero() {
       </div>
       <button className='bg-white flex justify-center items-center rounded-2xl p-2 lg:mb-11 '>
      <span className='mr-2'>
-      <Link to={"/bestCollection"} className='duration-500 '>
-    <p className='font-Montserrat '>  Shop all</p>
+      <Link to={"/ProductSlider"} className='duration-500 '>
+    <button className='font-Montserrat '>  Shop all</button>
     </Link>
      </span>
      <span>

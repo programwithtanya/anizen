@@ -9,6 +9,7 @@ import Cart from './components/Cart';
 import BestCollection from './components/BestCollection';
 import Payment from './components/Payment';
 import Footer from './components/Footer';
+import ProductSlider from "./components/ProductSlider"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <Route path='/cart' element={<Cart/>}></Route>
     <Route path='/bestCollection' element={<BestCollection/>}></Route>
     <Route path='/payment' element={<Payment/>}></Route>
+    <Route path='/productSlider' element={<ProductSlider/>}></Route>
    </Routes>
    <Footer/>
 
