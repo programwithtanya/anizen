@@ -1,48 +1,55 @@
 import React from "react";
-import {  useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import data from "../data.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ProductDetail() {
   let { slug } = useParams();
+
   function deSlugify(slug) {
     return slug.replace(/-/g, " ");
   }
+
   const title = deSlugify(slug);
   const product = data.find(
     (prod) => prod.title.toLowerCase() === title.toLowerCase()
   );
 
   const [productImage, setProductImage] = useState(product.image[0]);
-  const newimage = (image) => {
-    setProductImage(image);
-  };
-  
-
-
-
   const [cart, setCart] = useState(
     localStorage.getItem("cart") !== null
       ? JSON.parse(localStorage.getItem("cart"))
       : []
   );
-  console.log("cart:", cart);
-  console.log("prod:", product);
 
-  const addToCart = () => {
-    console.log("function runned");
-    setCart([...cart, product]);
-    console.log(cart);
+  useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
-    
+  const newImage = (image) => {
+    setProductImage(image);
   };
 
-  function nextImg() {
-    
-    
-  }
+  const addToCart = () => {
+    setCart((prevCart) => {
+      const isInCart = prevCart.find((item) => item.title === product.title);
+      if (isInCart) {
+        return prevCart.map((item) =>
+          item.title === product.title
+            ? { ...item, quantity: item.quantity + 1 }
+            : item , 
+        );
+      } else {
+        return [...prevCart, { ...product, quantity: 1 }];
+      }
+    });
+    toast.info("Product added to cart!",{position: "top-center",})
 
+  };
+
+  
 
   if (!product) {
     return <div>Product not found</div>;
@@ -53,35 +60,30 @@ export default function ProductDetail() {
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-6 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap ">
-        
             <div className="flex justify-center items-center w-screen lg:w-auto flex-col">
-           
               <img
-                className="w-56 h-56 object-contain lg:w-80 lg:h-80 "
+                className="w-56 h-56 object-contain lg:w-80 lg:h-80"
                 src={productImage}
                 alt={product.title}
               />
 
               <div className="flex flex-row mt-4">
-                {product.image.map((e, index) => {
-                  return (
-                    <img
-                      onClick={() => newimage(e)}
-                      className="w-20 h-20 cursor-pointer object-contain"
-                      src={e}
-                      alt=""
-                      key={index}
-                    />
-                  );
-                })}
+                {product.image.map((e, index) => (
+                  <img
+                    onClick={() => newImage(e)}
+                    className="w-20 h-20 cursor-pointer object-contain"
+                    src={e}
+                    alt="images"
+                    key={index}
+                  />
+                ))}
               </div>
             </div>
-         
 
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h1
                 id="title"
-                className="text-gray-900 text-3xl title-font font-medium mb-1  text-center lg:text-left"
+                className="text-gray-900 text-3xl title-font font-medium mb-1 text-center lg:text-left"
               >
                 {product.title}
               </h1>
@@ -93,7 +95,7 @@ export default function ProductDetail() {
                   ${product.price}
                 </span>
                 <button
-                  onClick={()=>{addToCart()}}
+                  onClick={addToCart} 
                   className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
                 >
                   Add to Cart
@@ -115,6 +117,8 @@ export default function ProductDetail() {
           </div>
         </div>
       </section>
+      <ToastContainer />
     </div>
+    
   );
 }

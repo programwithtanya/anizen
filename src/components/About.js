@@ -12,7 +12,7 @@ export default function About() {
       </div>
       <div className='flex flex-row justify-evenly items-center flex-wrap'>
         <div>
-            <img className='lg:w-72 w-56' src={about} alt="" />
+            <img className='lg:w-72 w-56' src={about} alt="about" />
         </div>
         <div>
             <p className='lg:w-[60rem] text-[#5B5353] text-lg font-varela mb-5'> 

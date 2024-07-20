@@ -27,6 +27,7 @@ export default function Cart() {
     localStorage.setItem("cart", JSON.stringify(newArr));
     setCart(newArr);
   }
+  
 
   return (
     <div className="py-10 relative">
@@ -110,7 +111,7 @@ export default function Cart() {
                     </p>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center ">
-                        <button className="mx-1 group rounded-[50px] border border-gray-200 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
+                        <button  className="mx-1 group rounded-[50px] border border-gray-200 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
                           <svg
                             className="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
                             width="18"
@@ -132,7 +133,7 @@ export default function Cart() {
                           type="text"
                           id="number"
                           className="border font-varela border-gray-200 rounded-full w-10 aspect-square outline-none text-gray-900 font-semibold text-sm py-1.5 px-3 bg-gray-100  text-center"
-                          placeholder="0"
+                          placeholder={item.quantity}
                         />
                         <button className="mx-1 group rounded-[50px] border border-gray-200 shadow-sm shadow-transparent p-2.5 flex items-center justify-center bg-white transition-all duration-500 hover:shadow-gray-200 hover:bg-gray-50 hover:border-gray-300 focus-within:outline-gray-300">
                           <svg
