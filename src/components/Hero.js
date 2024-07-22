@@ -22,7 +22,11 @@ export default function Hero() {
     </Link>
      </span>
      <span>
+     <Link to={"/ProductSlider"} className='duration-500 '>
+
      <i className="fa-solid fa-arrow-right text-black"></i>
+     </Link>
+
      </span>
       </button>
     </div>
